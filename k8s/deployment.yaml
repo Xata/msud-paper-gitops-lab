@@ -13,6 +13,8 @@ spec:
       labels:
         app: example-paper
     spec:
+      securityContext:
+        fsGroup: 1000
       containers:
         - name: paper
           image: ghcr.io/xata/msud-paper-gitops-lab:latest
